@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1416381B2596C062008F253D /* LZRXSwiftTableSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416381A2596C062008F253D /* LZRXSwiftTableSectionView.swift */; };
+		14163825259706F8008F253D /* LZRXCollectionViewRowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14163824259706F8008F253D /* LZRXCollectionViewRowVC.swift */; };
+		1416382D25971A7F008F253D /* LZRXCollectionViewSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416382C25971A7F008F253D /* LZRXCollectionViewSectionVC.swift */; };
 		1488822325959A09002614AC /* LZRXSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488822225959A09002614AC /* LZRXSwiftVC.swift */; };
 		1488823F2595D17B002614AC /* LZRxSwiftBaseUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */; };
 		148882442595D656002614AC /* LZRXSwiftTableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148882432595D656002614AC /* LZRXSwiftTableRowView.swift */; };
@@ -104,6 +107,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1416381A2596C062008F253D /* LZRXSwiftTableSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXSwiftTableSectionView.swift; sourceTree = "<group>"; };
+		14163824259706F8008F253D /* LZRXCollectionViewRowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXCollectionViewRowVC.swift; sourceTree = "<group>"; };
+		1416382C25971A7F008F253D /* LZRXCollectionViewSectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXCollectionViewSectionVC.swift; sourceTree = "<group>"; };
 		1488822225959A09002614AC /* LZRXSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXSwiftVC.swift; sourceTree = "<group>"; };
 		1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRxSwiftBaseUse.swift; sourceTree = "<group>"; };
 		148882432595D656002614AC /* LZRXSwiftTableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXSwiftTableRowView.swift; sourceTree = "<group>"; };
@@ -224,6 +230,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14163822259706A3008F253D /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				148882432595D656002614AC /* LZRXSwiftTableRowView.swift */,
+				1416381A2596C062008F253D /* LZRXSwiftTableSectionView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		14163823259706B4008F253D /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				14163824259706F8008F253D /* LZRXCollectionViewRowVC.swift */,
+				1416382C25971A7F008F253D /* LZRXCollectionViewSectionVC.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		1488821D259593CF002614AC /* 首页基础 */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,9 +262,10 @@
 		14888221259599DC002614AC /* RXSwift */ = {
 			isa = PBXGroup;
 			children = (
+				14163823259706B4008F253D /* CollectionView */,
+				14163822259706A3008F253D /* TableView */,
 				1488822225959A09002614AC /* LZRXSwiftVC.swift */,
 				1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */,
-				148882432595D656002614AC /* LZRXSwiftTableRowView.swift */,
 			);
 			path = RXSwift;
 			sourceTree = "<group>";
@@ -790,6 +815,7 @@
 				14E5A10425946E6C00EB4983 /* HomeTopM.swift in Sources */,
 				148E00AC25957D1400BB027A /* LZBaseHomeVC.swift in Sources */,
 				1488822325959A09002614AC /* LZRXSwiftVC.swift in Sources */,
+				14163825259706F8008F253D /* LZRXCollectionViewRowVC.swift in Sources */,
 				14E5A09525945FB900EB4983 /* UILable+Extension.swift in Sources */,
 				14E5A08F25945FB900EB4983 /* Number+Extension.swift in Sources */,
 				14E5A0EF25946CA400EB4983 /* DNSPageContentView.swift in Sources */,
@@ -798,6 +824,7 @@
 				14E5A0F325946CA400EB4983 /* DNSPageViewManager.swift in Sources */,
 				14E59FF225945A7500EB4983 /* AppDelegate.swift in Sources */,
 				14E5A1292594833100EB4983 /* LZCustomSearchView.swift in Sources */,
+				1416382D25971A7F008F253D /* LZRXCollectionViewSectionVC.swift in Sources */,
 				14E5A07E25945FB900EB4983 /* UIImageView+Extension.swift in Sources */,
 				14E5A0FF25946E3400EB4983 /* ViewModelType.swift in Sources */,
 				14E5A0F225946CA400EB4983 /* DNSPageTitleView.swift in Sources */,
@@ -811,6 +838,7 @@
 				14E5A0F025946CA400EB4983 /* DNSPageHelper.swift in Sources */,
 				14E5A0B12594629C00EB4983 /* ToastView.swift in Sources */,
 				14E5A2FE2594A7EA00EB4983 /* QZIJKPlayerPresenter.swift in Sources */,
+				1416381B2596C062008F253D /* LZRXSwiftTableSectionView.swift in Sources */,
 				14E5A11E25947F3300EB4983 /* URefresh.swift in Sources */,
 				14E5A08C25945FB900EB4983 /* MarginLabel.swift in Sources */,
 				14E5A09325945FB900EB4983 /* FileOperation.swift in Sources */,

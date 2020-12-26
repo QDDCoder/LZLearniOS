@@ -35,9 +35,9 @@ class LZRXSwiftVC: LZBaseVC {
                 [
                     HomeCategoryModel(withName: "基础使用", withJump: LZRxSwiftBaseUse.self),
                     HomeCategoryModel(withName: "TableView-row", withJump: LZRXSwiftTableRowView.self),
-                    HomeCategoryModel(withName: "TableView-section", withJump: LZRxSwiftBaseUse.self),
-                    HomeCategoryModel(withName: "CollectionView-row", withJump: LZRxSwiftBaseUse.self),
-                    HomeCategoryModel(withName: "CollectionView-section", withJump: LZRxSwiftBaseUse.self),
+                    HomeCategoryModel(withName: "TableView-section", withJump: LZRXSwiftTableSectionView.self),
+                    HomeCategoryModel(withName: "CollectionView-row", withJump: LZRXCollectionViewRowVC.self),
+                    HomeCategoryModel(withName: "CollectionView-section", withJump: LZRXCollectionViewSectionVC.self),
                     HomeCategoryModel(withName: "网络库", withJump: LZRxSwiftBaseUse.self),
                     HomeCategoryModel(withName: "RXSwift的APP架构-MVVM", withJump: LZRxSwiftBaseUse.self),
                     HomeCategoryModel(withName: "RXSwift的APP架构-RxFeedback", withJump: LZRxSwiftBaseUse.self),

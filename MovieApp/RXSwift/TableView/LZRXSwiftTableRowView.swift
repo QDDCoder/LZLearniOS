@@ -31,7 +31,6 @@ class LZRXSwiftTableRowView: LZBaseVC {
             return bgColor!
         }.bind(to: customTabbar.rx.backgroundColor).disposed(by: disposeBag)
         
-        
         self.view.addSubview($0)
     }
     //数据
