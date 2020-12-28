@@ -31,6 +31,7 @@ class LZRXCollectionViewSectionVC: LZBaseVC {
         //重排序节奏）可以调节集合视图重排序的响应性。 是 CollectionView 独有的属性（相对于UITableView），因为 其独有的二维网格的布局，因此在重新排序的过程中有时候会发生元素回流了，有时候只是移动到别的位置，不想要这样的效果，就可以修改这个属性改变其相应性
         $0.reorderingCadence = .slow
         
+        
         //隐藏纵向滑动线
         $0.showsVerticalScrollIndicator = false
         
@@ -43,11 +44,8 @@ class LZRXCollectionViewSectionVC: LZBaseVC {
         }.subscribe(onNext:{(index,model) in
             ToastView.instance.showToast(content: "点击了===>>>\(index.section)===>>>\(model.name)")
         }).disposed(by: disposeBag)
-        
-    
         self.view.addSubview($0)
     }
-    
     
     
     //设置数据绑定的中间件
@@ -56,7 +54,6 @@ class LZRXCollectionViewSectionVC: LZBaseVC {
         cell.textInfo.text=item.name
         cell.backgroundColor = .randomColor
         cell.dragStateDidChange(.lifting)
-
         return cell
     }.then {
         // 设置sectionHeader
@@ -71,7 +68,6 @@ class LZRXCollectionViewSectionVC: LZBaseVC {
         $0.canMoveItemAtIndexPath={(dataSourceIn,indexPath) -> Bool in
             return true
         }
-        
     }
 
     //创造数据
@@ -118,8 +114,7 @@ class LZRXCollectionViewSectionVC: LZBaseVC {
         ]
     )]
     
-
-    
+    private var dragingIndexPath:IndexPath?
     override func viewDidLoad() {
         super.viewDidLoad()
         titleInfo = "tableView-section"
@@ -138,6 +133,8 @@ class LZRXCollectionViewSectionVC: LZBaseVC {
 }
 extension LZRXCollectionViewSectionVC: UICollectionViewDelegate,UICollectionViewDelegateFlowLayout {
     
+    
+
     // 设置Cell的大小
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = dataModel[indexPath.section].items[indexPath.row].name.ga_widthForComment(fontSize: 14, height: 20*PionHeight)
@@ -168,17 +165,47 @@ extension LZRXCollectionViewSectionVC: UICollectionViewDelegate,UICollectionView
 extension LZRXCollectionViewSectionVC:UICollectionViewDropDelegate
 {
     func collectionView(_ collectionView: UICollectionView, performDropWith coordinator: UICollectionViewDropCoordinator) {
-        
+        // 交换目标indexPath
+        guard let destinationIndexPath = coordinator.destinationIndexPath else {
+            return
+        }
+        switch coordinator.proposal.operation {
+        case .move:
+            let items = coordinator.items
+            // 交换的发起item和indexPath
+            if let item = items.first, let sourceIndexPath = item.sourceIndexPath {
+                //执行批量更新
+                collectionView.performBatchUpdates({
+                    let tempItemp = self.dataModel[destinationIndexPath.section].items[sourceIndexPath.row]
+                    self.dataModel[destinationIndexPath.section].items.remove(at: sourceIndexPath.row)
+                    self.dataModel[destinationIndexPath.section].items.insert(tempItemp, at: destinationIndexPath.row)
+                    collectionView.deleteItems(at: [sourceIndexPath])
+                    collectionView.insertItems(at: [destinationIndexPath])
+                    response?.onNext(dataModel)
+                })
+                //将项目动画化到视图层次结构中的任意位置
+                coordinator.drop(item.dragItem, toItemAt: destinationIndexPath)
+            }
+            break
+        default:
+            return
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate session: UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UICollectionViewDropProposal {
-        return UICollectionViewDropProposal(operation: .move, intent: .insertAtDestinationIndexPath)
-    }
-    
-    // cell的动画执行完毕后 执行一次数据交换
-    func collectionView(_ collectionView: UICollectionView, dropSessionDidEnd session: UIDropSession) {
-        dataModel = dataSource.sectionModels
-        response?.onNext(dataModel)
+        if dragingIndexPath?.section != destinationIndexPath?.section {
+            return UICollectionViewDropProposal(operation: .forbidden)
+        }else{
+            if session.localDragSession != nil {
+                if collectionView.hasActiveDrag {
+                    return UICollectionViewDropProposal(operation: .move, intent: .insertAtDestinationIndexPath)
+                } else {
+                    return UICollectionViewDropProposal(operation: .copy, intent: .insertAtDestinationIndexPath)
+                }
+            } else {
+                return UICollectionViewDropProposal(operation: .forbidden)
+            }
+        }
     }
 }
 
@@ -186,17 +213,16 @@ extension LZRXCollectionViewSectionVC:UICollectionViewDragDelegate{
     
     func collectionView(_ collectionView: UICollectionView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
         guard indexPath.section != 1 else {
-                    return []
-                }
+            return []
+        }
         let item = self.dataModel[indexPath.section].items[indexPath.row].name
         let itemProvider = NSItemProvider(object: item as NSString)
         let dragItem = UIDragItem(itemProvider: itemProvider)
         dragItem.localObject = item
-//        dragingIndexPath = indexPath
+        //开始拖动 的indexPath
+        dragingIndexPath = indexPath
         return [dragItem]
     }
-    
-    
 }
 
 
