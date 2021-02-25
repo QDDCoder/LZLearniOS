@@ -9,10 +9,6 @@ import UIKit
 import RxSwift
 import RxDataSources
 class LZRXCollectionViewSectionVC: LZBaseVC {
-    
-    
-    // https://blog.csdn.net/qin_shi/article/details/80258693 待整理地址
-    
     private lazy var layout = UICollectionViewFlowLayout()
     private lazy var collectionView = UICollectionView(frame: CGRect(x: 10*PionWidth, y: NAVBAR_HEIGHT, width: ScreenW-20*PionWidth, height: ScreenH-NAVBAR_HEIGHT),collectionViewLayout: layout).then {
         $0.backgroundColor = .white

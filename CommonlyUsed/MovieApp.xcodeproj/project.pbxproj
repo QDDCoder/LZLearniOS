@@ -84,6 +84,7 @@
 		14E5A3032594A7EA00EB4983 /* QZIJKPlayerPlayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E5A2F92594A7EA00EB4983 /* QZIJKPlayerPlayModel.swift */; };
 		14E5A3042594A7EA00EB4983 /* QZPlayerResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 14E5A2FA2594A7EA00EB4983 /* QZPlayerResource.bundle */; };
 		14E5A3052594A7EA00EB4983 /* QZIJKPlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E5A2FB2594A7EA00EB4983 /* QZIJKPlayerTableViewCell.swift */; };
+		14E7EAE925E7A2E3007258C9 /* LZBaseDesignPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E7EAE825E7A2E2007258C9 /* LZBaseDesignPattern.swift */; };
 		221528CF5A6B9CA56FD43127 /* Pods_MovieApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52615390C435C01447BAC5D3 /* Pods_MovieApp.framework */; };
 		AE2FAE2A50138488F705D98A /* Pods_MovieApp_MovieAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEA4F8194E356D791EE7A33 /* Pods_MovieApp_MovieAppUITests.framework */; };
 		C798855C42FB8FE318B9DD8F /* Pods_MovieAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C9158E75AC0A88D6B92649 /* Pods_MovieAppTests.framework */; };
@@ -191,6 +192,7 @@
 		14E5A2F92594A7EA00EB4983 /* QZIJKPlayerPlayModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QZIJKPlayerPlayModel.swift; sourceTree = "<group>"; };
 		14E5A2FA2594A7EA00EB4983 /* QZPlayerResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QZPlayerResource.bundle; sourceTree = "<group>"; };
 		14E5A2FB2594A7EA00EB4983 /* QZIJKPlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QZIJKPlayerTableViewCell.swift; sourceTree = "<group>"; };
+		14E7EAE825E7A2E2007258C9 /* LZBaseDesignPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZBaseDesignPattern.swift; sourceTree = "<group>"; };
 		3ADEC07C746A4A9EA4589D6E /* Pods-MovieAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MovieAppTests/Pods-MovieAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		52615390C435C01447BAC5D3 /* Pods_MovieApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CB023E6F7F269D23675912 /* Pods-MovieApp-MovieAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp-MovieAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MovieApp-MovieAppUITests/Pods-MovieApp-MovieAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -248,6 +250,14 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		1423EBCB2599C83F00CD24D8 /* 基础 */ = {
+			isa = PBXGroup;
+			children = (
+				1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */,
+			);
+			path = "基础";
+			sourceTree = "<group>";
+		};
 		1488821D259593CF002614AC /* 首页基础 */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,10 +272,10 @@
 		14888221259599DC002614AC /* RXSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1423EBCB2599C83F00CD24D8 /* 基础 */,
 				14163823259706B4008F253D /* CollectionView */,
 				14163822259706A3008F253D /* TableView */,
 				1488822225959A09002614AC /* LZRXSwiftVC.swift */,
-				1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */,
 			);
 			path = RXSwift;
 			sourceTree = "<group>";
@@ -295,6 +305,7 @@
 		14E59FF025945A7500EB4983 /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				14E7EAE325E7A1A3007258C9 /* 23种设计模式 */,
 				14888221259599DC002614AC /* RXSwift */,
 				1488821D259593CF002614AC /* 首页基础 */,
 				14E5A0A52594609E00EB4983 /* Config */,
@@ -512,6 +523,206 @@
 				14E5A2FB2594A7EA00EB4983 /* QZIJKPlayerTableViewCell.swift */,
 			);
 			path = QZIJKPlayer;
+			sourceTree = "<group>";
+		};
+		14E7EAE325E7A1A3007258C9 /* 23种设计模式 */ = {
+			isa = PBXGroup;
+			children = (
+				14E7EB0625E7A4D5007258C9 /* 桥梁模式 */,
+				14E7EB0525E7A4CC007258C9 /* 享元模式 */,
+				14E7EB0425E7A4C5007258C9 /* 解释器模式 */,
+				14E7EB0325E7A4BD007258C9 /* 状态模式 */,
+				14E7EB0225E7A4B5007258C9 /* 访问者模式 */,
+				14E7EB0125E7A4AB007258C9 /* 备忘录模式 */,
+				14E7EB0025E7A4A4007258C9 /* 门面模式 */,
+				14E7EAFF25E7A49B007258C9 /* 观察者模式 */,
+				14E7EAFE25E7A493007258C9 /* 组合模式 */,
+				14E7EAFD25E7A48B007258C9 /* 迭代器模式 */,
+				14E7EAFC25E7A483007258C9 /* 适配器模式 */,
+				14E7EAFB25E7A47A007258C9 /* 策略模式 */,
+				14E7EAFA25E7A472007258C9 /* 装饰模式 */,
+				14E7EAF925E7A469007258C9 /* 责任链模式 */,
+				14E7EAF825E7A460007258C9 /* 命令模式 */,
+				14E7EAF725E7A459007258C9 /* 中介者模式 */,
+				14E7EAF625E7A450007258C9 /* 原型模式 */,
+				14E7EAF525E7A446007258C9 /* 代理模式 */,
+				14E7EAF425E7A43E007258C9 /* 建造者模式 */,
+				14E7EAF325E7A434007258C9 /* 模板方法模式 */,
+				14E7EAF225E7A42D007258C9 /* 抽象工厂模式 */,
+				14E7EAF125E7A424007258C9 /* 工厂模式 */,
+				14E7EAF025E7A408007258C9 /* 单例模式 */,
+				14E7EAE425E7A1D5007258C9 /* c */,
+			);
+			path = "23种设计模式";
+			sourceTree = "<group>";
+		};
+		14E7EAE425E7A1D5007258C9 /* c */ = {
+			isa = PBXGroup;
+			children = (
+				14E7EAE825E7A2E2007258C9 /* LZBaseDesignPattern.swift */,
+			);
+			path = c;
+			sourceTree = "<group>";
+		};
+		14E7EAF025E7A408007258C9 /* 单例模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "单例模式";
+			sourceTree = "<group>";
+		};
+		14E7EAF125E7A424007258C9 /* 工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "工厂模式";
+			sourceTree = "<group>";
+		};
+		14E7EAF225E7A42D007258C9 /* 抽象工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "抽象工厂模式";
+			sourceTree = "<group>";
+		};
+		14E7EAF325E7A434007258C9 /* 模板方法模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "模板方法模式";
+			sourceTree = "<group>";
+		};
+		14E7EAF425E7A43E007258C9 /* 建造者模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "建造者模式";
+			sourceTree = "<group>";
+		};
+		14E7EAF525E7A446007258C9 /* 代理模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "代理模式";
+			sourceTree = "<group>";
+		};
+		14E7EAF625E7A450007258C9 /* 原型模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "原型模式";
+			sourceTree = "<group>";
+		};
+		14E7EAF725E7A459007258C9 /* 中介者模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "中介者模式";
+			sourceTree = "<group>";
+		};
+		14E7EAF825E7A460007258C9 /* 命令模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "命令模式";
+			sourceTree = "<group>";
+		};
+		14E7EAF925E7A469007258C9 /* 责任链模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "责任链模式";
+			sourceTree = "<group>";
+		};
+		14E7EAFA25E7A472007258C9 /* 装饰模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "装饰模式";
+			sourceTree = "<group>";
+		};
+		14E7EAFB25E7A47A007258C9 /* 策略模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "策略模式";
+			sourceTree = "<group>";
+		};
+		14E7EAFC25E7A483007258C9 /* 适配器模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "适配器模式";
+			sourceTree = "<group>";
+		};
+		14E7EAFD25E7A48B007258C9 /* 迭代器模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "迭代器模式";
+			sourceTree = "<group>";
+		};
+		14E7EAFE25E7A493007258C9 /* 组合模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "组合模式";
+			sourceTree = "<group>";
+		};
+		14E7EAFF25E7A49B007258C9 /* 观察者模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "观察者模式";
+			sourceTree = "<group>";
+		};
+		14E7EB0025E7A4A4007258C9 /* 门面模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "门面模式";
+			sourceTree = "<group>";
+		};
+		14E7EB0125E7A4AB007258C9 /* 备忘录模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "备忘录模式";
+			sourceTree = "<group>";
+		};
+		14E7EB0225E7A4B5007258C9 /* 访问者模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "访问者模式";
+			sourceTree = "<group>";
+		};
+		14E7EB0325E7A4BD007258C9 /* 状态模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "状态模式";
+			sourceTree = "<group>";
+		};
+		14E7EB0425E7A4C5007258C9 /* 解释器模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "解释器模式";
+			sourceTree = "<group>";
+		};
+		14E7EB0525E7A4CC007258C9 /* 享元模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "享元模式";
+			sourceTree = "<group>";
+		};
+		14E7EB0625E7A4D5007258C9 /* 桥梁模式 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "桥梁模式";
 			sourceTree = "<group>";
 		};
 		5F6294C745A11895D09F2577 /* Frameworks */ = {
@@ -814,6 +1025,7 @@
 				14E5A0F525946CA400EB4983 /* DNSPageStyle.swift in Sources */,
 				14E5A10425946E6C00EB4983 /* HomeTopM.swift in Sources */,
 				148E00AC25957D1400BB027A /* LZBaseHomeVC.swift in Sources */,
+				14E7EAE925E7A2E3007258C9 /* LZBaseDesignPattern.swift in Sources */,
 				1488822325959A09002614AC /* LZRXSwiftVC.swift in Sources */,
 				14163825259706F8008F253D /* LZRXCollectionViewRowVC.swift in Sources */,
 				14E5A09525945FB900EB4983 /* UILable+Extension.swift in Sources */,

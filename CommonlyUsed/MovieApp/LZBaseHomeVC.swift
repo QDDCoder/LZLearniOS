@@ -43,7 +43,7 @@ class LZBaseHomeVC: LZBaseVC {
     }
     private func setData()  {
                 
-        dataSource.append(SectionModel(model: "首页基础", items: [HomeCategoryModel(withName: "首页基础", withJump: ViewController.self),HomeCategoryModel(withName: "RXSwift", withJump: LZRXSwiftVC.self)]))
+        dataSource.append(SectionModel(model: "首页基础", items: [HomeCategoryModel(withName: "首页基础", withJump: ViewController.self),HomeCategoryModel(withName: "RXSwift", withJump: LZRXSwiftVC.self),HomeCategoryModel(withName: "23种设计模式", withJump: LZBaseDesignPattern.self)]))
         
         let dataOB = BehaviorSubject.init(value: dataSource).asObserver()
         dataOB.bind(to: tableView.rx.items(dataSource: dataSourceSection)).disposed(by: disposeBag)
