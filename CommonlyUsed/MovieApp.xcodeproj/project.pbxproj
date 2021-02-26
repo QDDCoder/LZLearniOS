@@ -14,6 +14,10 @@
 		1488823F2595D17B002614AC /* LZRxSwiftBaseUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */; };
 		148882442595D656002614AC /* LZRXSwiftTableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148882432595D656002614AC /* LZRXSwiftTableRowView.swift */; };
 		148E00AC25957D1400BB027A /* LZBaseHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148E00AB25957D1400BB027A /* LZBaseHomeVC.swift */; };
+		1499DEFB25E8B91A00F78D16 /* SingleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499DEFA25E8B91A00F78D16 /* SingleModel.swift */; };
+		1499DF0025E8BB9600F78D16 /* SingleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499DEFF25E8BB9600F78D16 /* SingleVC.swift */; };
+		1499DF0525E8BDD200F78D16 /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499DF0425E8BDD200F78D16 /* Computer.swift */; };
+		1499DF1725E8C24500F78D16 /* FactoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499DF1625E8C24500F78D16 /* FactoryVC.swift */; };
 		14E59FF225945A7500EB4983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E59FF125945A7500EB4983 /* AppDelegate.swift */; };
 		14E59FF625945A7500EB4983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E59FF525945A7500EB4983 /* ViewController.swift */; };
 		14E59FFB25945A7600EB4983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E59FFA25945A7600EB4983 /* Assets.xcassets */; };
@@ -115,6 +119,10 @@
 		1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRxSwiftBaseUse.swift; sourceTree = "<group>"; };
 		148882432595D656002614AC /* LZRXSwiftTableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXSwiftTableRowView.swift; sourceTree = "<group>"; };
 		148E00AB25957D1400BB027A /* LZBaseHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZBaseHomeVC.swift; sourceTree = "<group>"; };
+		1499DEFA25E8B91A00F78D16 /* SingleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleModel.swift; sourceTree = "<group>"; };
+		1499DEFF25E8BB9600F78D16 /* SingleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleVC.swift; sourceTree = "<group>"; };
+		1499DF0425E8BDD200F78D16 /* Computer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
+		1499DF1625E8C24500F78D16 /* FactoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryVC.swift; sourceTree = "<group>"; };
 		14E59FEE25945A7500EB4983 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E59FF125945A7500EB4983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14E59FF525945A7500EB4983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -567,6 +575,8 @@
 		14E7EAF025E7A408007258C9 /* 单例模式 */ = {
 			isa = PBXGroup;
 			children = (
+				1499DEFA25E8B91A00F78D16 /* SingleModel.swift */,
+				1499DEFF25E8BB9600F78D16 /* SingleVC.swift */,
 			);
 			path = "单例模式";
 			sourceTree = "<group>";
@@ -574,6 +584,8 @@
 		14E7EAF125E7A424007258C9 /* 工厂模式 */ = {
 			isa = PBXGroup;
 			children = (
+				1499DF0425E8BDD200F78D16 /* Computer.swift */,
+				1499DF1625E8C24500F78D16 /* FactoryVC.swift */,
 			);
 			path = "工厂模式";
 			sourceTree = "<group>";
@@ -988,6 +1000,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1499DF0025E8BB9600F78D16 /* SingleVC.swift in Sources */,
 				14E5A08125945FB900EB4983 /* Int+Extension.swift in Sources */,
 				14E5A0F125946CA400EB4983 /* DNSPageView.swift in Sources */,
 				14E5A08525945FB900EB4983 /* JKGlobalDefinition.swift in Sources */,
@@ -1013,6 +1026,7 @@
 				14E5A05525945F9000EB4983 /* Manager.swift in Sources */,
 				14E5A07F25945FB900EB4983 /* ThreadTools.swift in Sources */,
 				14E5A08A25945FB900EB4983 /* DateTools.swift in Sources */,
+				1499DF1725E8C24500F78D16 /* FactoryVC.swift in Sources */,
 				14E5A09225945FB900EB4983 /* Data+Extension.swift in Sources */,
 				14E5A0CA2594641300EB4983 /* LZNavigationController.swift in Sources */,
 				14E5A1182594768A00EB4983 /* LZListVideoM.swift in Sources */,
@@ -1023,6 +1037,7 @@
 				14E5A08E25945FB900EB4983 /* Then.swift in Sources */,
 				14E5A0CF2594694300EB4983 /* LZBaseVC.swift in Sources */,
 				14E5A0F525946CA400EB4983 /* DNSPageStyle.swift in Sources */,
+				1499DF0525E8BDD200F78D16 /* Computer.swift in Sources */,
 				14E5A10425946E6C00EB4983 /* HomeTopM.swift in Sources */,
 				148E00AC25957D1400BB027A /* LZBaseHomeVC.swift in Sources */,
 				14E7EAE925E7A2E3007258C9 /* LZBaseDesignPattern.swift in Sources */,
@@ -1035,6 +1050,7 @@
 				14E5A09425945FB900EB4983 /* CALayer+Extension.swift in Sources */,
 				14E5A0F325946CA400EB4983 /* DNSPageViewManager.swift in Sources */,
 				14E59FF225945A7500EB4983 /* AppDelegate.swift in Sources */,
+				1499DEFB25E8B91A00F78D16 /* SingleModel.swift in Sources */,
 				14E5A1292594833100EB4983 /* LZCustomSearchView.swift in Sources */,
 				1416382D25971A7F008F253D /* LZRXCollectionViewSectionVC.swift in Sources */,
 				14E5A07E25945FB900EB4983 /* UIImageView+Extension.swift in Sources */,
