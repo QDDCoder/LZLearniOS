@@ -14,6 +14,7 @@ protocol Computer{
     func getCPU() -> String
 }
 
+/// 协议扩展 增加父类的实现方法
 extension Computer{
     func toString() -> String {
         return "RAM= "+getRAM()+", HDD="+getHDD()+", CPU="+getCPU()
@@ -22,6 +23,7 @@ extension Computer{
 
 /// 仅仅只是为了 减少代码 编写了中间件
 class ComputerCenter: NSObject,Computer {
+    /// 内聚的参数
     private var ram:String=""
     private var hdd:String=""
     private var cpu:String=""
@@ -61,6 +63,13 @@ class ComputerFactory: NSObject {
         super.init()
     }
     
+    /// 传入类型和初始化参数构建不同的子类
+    /// - Parameters:
+    ///   - type: 类型
+    ///   - ram: 参数ram
+    ///   - hdd: 参数hdd
+    ///   - cpu: 参数cpu
+    /// - Returns: 抽象的父类
     static func getComputer(withType type:String,withRam ram:String,withHdd hdd:String,withCpu cpu:String) -> Computer {
         if type == "PC" {
             return PC(withRam: ram, withHdd: hdd, withCpu: cpu)
@@ -68,5 +77,4 @@ class ComputerFactory: NSObject {
             return Server(withRam: ram, withHdd: hdd, withCpu: cpu)
         }
     }
-    
 }
