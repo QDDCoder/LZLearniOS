@@ -24,6 +24,8 @@
 		14CE2ECB25EC7DDB00C77641 /* TemplateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2ECA25EC7DDB00C77641 /* TemplateModel.swift */; };
 		14CE2ED025EC869E00C77641 /* BuilderPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2ECF25EC869E00C77641 /* BuilderPatternVC.swift */; };
 		14CE2ED525EC86B100C77641 /* BuilderPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2ED425EC86B100C77641 /* BuilderPatternModel.swift */; };
+		14CE2EDA25EC925400C77641 /* ProxyPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2ED925EC925400C77641 /* ProxyPatternVC.swift */; };
+		14CE2EE225EC927800C77641 /* ProxyPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2EE125EC927800C77641 /* ProxyPatternModel.swift */; };
 		14E59FF225945A7500EB4983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E59FF125945A7500EB4983 /* AppDelegate.swift */; };
 		14E59FF625945A7500EB4983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E59FF525945A7500EB4983 /* ViewController.swift */; };
 		14E59FFB25945A7600EB4983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E59FFA25945A7600EB4983 /* Assets.xcassets */; };
@@ -135,6 +137,8 @@
 		14CE2ECA25EC7DDB00C77641 /* TemplateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateModel.swift; sourceTree = "<group>"; };
 		14CE2ECF25EC869E00C77641 /* BuilderPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderPatternVC.swift; sourceTree = "<group>"; };
 		14CE2ED425EC86B100C77641 /* BuilderPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderPatternModel.swift; sourceTree = "<group>"; };
+		14CE2ED925EC925400C77641 /* ProxyPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyPatternVC.swift; sourceTree = "<group>"; };
+		14CE2EE125EC927800C77641 /* ProxyPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyPatternModel.swift; sourceTree = "<group>"; };
 		14E59FEE25945A7500EB4983 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E59FF125945A7500EB4983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14E59FF525945A7500EB4983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -632,6 +636,8 @@
 		14E7EAF525E7A446007258C9 /* 代理模式 */ = {
 			isa = PBXGroup;
 			children = (
+				14CE2ED925EC925400C77641 /* ProxyPatternVC.swift */,
+				14CE2EE125EC927800C77641 /* ProxyPatternModel.swift */,
 			);
 			path = "代理模式";
 			sourceTree = "<group>";
@@ -1025,6 +1031,7 @@
 				14E5A0FA25946DA900EB4983 /* XFSDHomeVM.swift in Sources */,
 				14E5A08325945FB900EB4983 /* UIWindow+Extension.swift in Sources */,
 				14E5A08225945FB900EB4983 /* UIView_Animation+Extension.swift in Sources */,
+				14CE2EE225EC927800C77641 /* ProxyPatternModel.swift in Sources */,
 				14E5A1232594807400EB4983 /* LZSearchVC.swift in Sources */,
 				14E5A3012594A7EA00EB4983 /* QZIJKPlayerViewController.swift in Sources */,
 				14E5A0A9259460C300EB4983 /* GlobalConfig.swift in Sources */,
@@ -1069,6 +1076,7 @@
 				14E5A09525945FB900EB4983 /* UILable+Extension.swift in Sources */,
 				14E5A08F25945FB900EB4983 /* Number+Extension.swift in Sources */,
 				14E5A0EF25946CA400EB4983 /* DNSPageContentView.swift in Sources */,
+				14CE2EDA25EC925400C77641 /* ProxyPatternVC.swift in Sources */,
 				14E5A08425945FB900EB4983 /* UIImage+Gif.swift in Sources */,
 				14E5A09425945FB900EB4983 /* CALayer+Extension.swift in Sources */,
 				14E5A0F325946CA400EB4983 /* DNSPageViewManager.swift in Sources */,
