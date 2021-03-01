@@ -18,6 +18,8 @@
 		1499DF0025E8BB9600F78D16 /* SingleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499DEFF25E8BB9600F78D16 /* SingleVC.swift */; };
 		1499DF0525E8BDD200F78D16 /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499DF0425E8BDD200F78D16 /* Computer.swift */; };
 		1499DF1725E8C24500F78D16 /* FactoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499DF1625E8C24500F78D16 /* FactoryVC.swift */; };
+		14CE2EB925EC6D9C00C77641 /* AbstractFactoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2EB825EC6D9C00C77641 /* AbstractFactoryVC.swift */; };
+		14CE2EC125EC6E7D00C77641 /* AbstractFactoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2EC025EC6E7D00C77641 /* AbstractFactoryModel.swift */; };
 		14E59FF225945A7500EB4983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E59FF125945A7500EB4983 /* AppDelegate.swift */; };
 		14E59FF625945A7500EB4983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E59FF525945A7500EB4983 /* ViewController.swift */; };
 		14E59FFB25945A7600EB4983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E59FFA25945A7600EB4983 /* Assets.xcassets */; };
@@ -123,6 +125,8 @@
 		1499DEFF25E8BB9600F78D16 /* SingleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleVC.swift; sourceTree = "<group>"; };
 		1499DF0425E8BDD200F78D16 /* Computer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
 		1499DF1625E8C24500F78D16 /* FactoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryVC.swift; sourceTree = "<group>"; };
+		14CE2EB825EC6D9C00C77641 /* AbstractFactoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryVC.swift; sourceTree = "<group>"; };
+		14CE2EC025EC6E7D00C77641 /* AbstractFactoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryModel.swift; sourceTree = "<group>"; };
 		14E59FEE25945A7500EB4983 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E59FF125945A7500EB4983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14E59FF525945A7500EB4983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -593,6 +597,8 @@
 		14E7EAF225E7A42D007258C9 /* 抽象工厂模式 */ = {
 			isa = PBXGroup;
 			children = (
+				14CE2EB825EC6D9C00C77641 /* AbstractFactoryVC.swift */,
+				14CE2EC025EC6E7D00C77641 /* AbstractFactoryModel.swift */,
 			);
 			path = "抽象工厂模式";
 			sourceTree = "<group>";
@@ -1011,6 +1017,7 @@
 				14E5A3012594A7EA00EB4983 /* QZIJKPlayerViewController.swift in Sources */,
 				14E5A0A9259460C300EB4983 /* GlobalConfig.swift in Sources */,
 				14E5A09B25945FD400EB4983 /* YXPageControl.swift in Sources */,
+				14CE2EC125EC6E7D00C77641 /* AbstractFactoryModel.swift in Sources */,
 				14E5A2FD2594A7EA00EB4983 /* QZSlider.swift in Sources */,
 				14E5A13425948E6500EB4983 /* LZVideoDetailVC.swift in Sources */,
 				14E5A3002594A7EA00EB4983 /* QZPlayerResource.swift in Sources */,
@@ -1042,6 +1049,7 @@
 				148E00AC25957D1400BB027A /* LZBaseHomeVC.swift in Sources */,
 				14E7EAE925E7A2E3007258C9 /* LZBaseDesignPattern.swift in Sources */,
 				1488822325959A09002614AC /* LZRXSwiftVC.swift in Sources */,
+				14CE2EB925EC6D9C00C77641 /* AbstractFactoryVC.swift in Sources */,
 				14163825259706F8008F253D /* LZRXCollectionViewRowVC.swift in Sources */,
 				14E5A09525945FB900EB4983 /* UILable+Extension.swift in Sources */,
 				14E5A08F25945FB900EB4983 /* Number+Extension.swift in Sources */,

@@ -93,6 +93,8 @@ class LZBaseVC: UIViewController {
          self.navigationController?.navigationBar.isTranslucent = flag
     }
     
+    
+    
     deinit {
         ToastView.instance.clear()
         NSLog("\(self.classForCoder)已释放")
