@@ -20,6 +20,8 @@
 		1499DF1725E8C24500F78D16 /* FactoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499DF1625E8C24500F78D16 /* FactoryVC.swift */; };
 		14CE2EB925EC6D9C00C77641 /* AbstractFactoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2EB825EC6D9C00C77641 /* AbstractFactoryVC.swift */; };
 		14CE2EC125EC6E7D00C77641 /* AbstractFactoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2EC025EC6E7D00C77641 /* AbstractFactoryModel.swift */; };
+		14CE2EC625EC7DC500C77641 /* TemplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2EC525EC7DC400C77641 /* TemplateVC.swift */; };
+		14CE2ECB25EC7DDB00C77641 /* TemplateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2ECA25EC7DDB00C77641 /* TemplateModel.swift */; };
 		14E59FF225945A7500EB4983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E59FF125945A7500EB4983 /* AppDelegate.swift */; };
 		14E59FF625945A7500EB4983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E59FF525945A7500EB4983 /* ViewController.swift */; };
 		14E59FFB25945A7600EB4983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E59FFA25945A7600EB4983 /* Assets.xcassets */; };
@@ -127,6 +129,8 @@
 		1499DF1625E8C24500F78D16 /* FactoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryVC.swift; sourceTree = "<group>"; };
 		14CE2EB825EC6D9C00C77641 /* AbstractFactoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryVC.swift; sourceTree = "<group>"; };
 		14CE2EC025EC6E7D00C77641 /* AbstractFactoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryModel.swift; sourceTree = "<group>"; };
+		14CE2EC525EC7DC400C77641 /* TemplateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateVC.swift; sourceTree = "<group>"; };
+		14CE2ECA25EC7DDB00C77641 /* TemplateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateModel.swift; sourceTree = "<group>"; };
 		14E59FEE25945A7500EB4983 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E59FF125945A7500EB4983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14E59FF525945A7500EB4983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -606,6 +610,8 @@
 		14E7EAF325E7A434007258C9 /* 模板方法模式 */ = {
 			isa = PBXGroup;
 			children = (
+				14CE2EC525EC7DC400C77641 /* TemplateVC.swift */,
+				14CE2ECA25EC7DDB00C77641 /* TemplateModel.swift */,
 			);
 			path = "模板方法模式";
 			sourceTree = "<group>";
@@ -1046,6 +1052,7 @@
 				14E5A0F525946CA400EB4983 /* DNSPageStyle.swift in Sources */,
 				1499DF0525E8BDD200F78D16 /* Computer.swift in Sources */,
 				14E5A10425946E6C00EB4983 /* HomeTopM.swift in Sources */,
+				14CE2EC625EC7DC500C77641 /* TemplateVC.swift in Sources */,
 				148E00AC25957D1400BB027A /* LZBaseHomeVC.swift in Sources */,
 				14E7EAE925E7A2E3007258C9 /* LZBaseDesignPattern.swift in Sources */,
 				1488822325959A09002614AC /* LZRXSwiftVC.swift in Sources */,
@@ -1081,6 +1088,7 @@
 				14E5A0F425946CA400EB4983 /* DNSPageCollectionViewFlowLayout.swift in Sources */,
 				14E5A09125945FB900EB4983 /* Dictionary+Extension.swift in Sources */,
 				148882442595D656002614AC /* LZRXSwiftTableRowView.swift in Sources */,
+				14CE2ECB25EC7DDB00C77641 /* TemplateModel.swift in Sources */,
 				14E5A05625945F9000EB4983 /* HomeApi.swift in Sources */,
 				14E5A05E25945F9000EB4983 /* NSCacheTool.swift in Sources */,
 			);

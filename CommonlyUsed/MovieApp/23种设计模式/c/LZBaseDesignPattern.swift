@@ -33,7 +33,7 @@ class LZBaseDesignPattern: LZBaseVC {
         self.view.addSubview($0)
     }
     //数据
-    private var dataSource:[String]=["单例模式","工厂模式","抽象工厂模式"]
+    private var dataSource:[String]=["单例模式","工厂模式","抽象工厂模式","模板模式"]
     //管道
     private var response:BehaviorSubject<[String]> = BehaviorSubject(value: []).asObserver()
     
@@ -76,6 +76,10 @@ extension LZBaseDesignPattern:UITableViewDelegate{
         case 2:
             //抽象工厂模式
             lz_pushViewController(viewController: AbstractFactoryVC())
+            break
+        case 3:
+            //模板模式
+            lz_pushViewController(viewController: TemplateVC())
             break
         default:
             break
