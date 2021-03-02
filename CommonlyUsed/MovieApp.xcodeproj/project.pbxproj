@@ -18,6 +18,10 @@
 		1499DF0025E8BB9600F78D16 /* SingleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499DEFF25E8BB9600F78D16 /* SingleVC.swift */; };
 		1499DF0525E8BDD200F78D16 /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499DF0425E8BDD200F78D16 /* Computer.swift */; };
 		1499DF1725E8C24500F78D16 /* FactoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499DF1625E8C24500F78D16 /* FactoryVC.swift */; };
+		14A530B225EE2E0F003E804D /* PrototypePatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A530B125EE2E0F003E804D /* PrototypePatternModel.swift */; };
+		14A530BF25EE3226003E804D /* PrototypePatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A530BE25EE3226003E804D /* PrototypePatternVC.swift */; };
+		14A530C725EE391B003E804D /* MediatorPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A530C625EE391B003E804D /* MediatorPatternVC.swift */; };
+		14A530CC25EE3938003E804D /* MediatorPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A530CB25EE3938003E804D /* MediatorPatternModel.swift */; };
 		14CE2EB925EC6D9C00C77641 /* AbstractFactoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2EB825EC6D9C00C77641 /* AbstractFactoryVC.swift */; };
 		14CE2EC125EC6E7D00C77641 /* AbstractFactoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2EC025EC6E7D00C77641 /* AbstractFactoryModel.swift */; };
 		14CE2EC625EC7DC500C77641 /* TemplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2EC525EC7DC400C77641 /* TemplateVC.swift */; };
@@ -131,6 +135,10 @@
 		1499DEFF25E8BB9600F78D16 /* SingleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleVC.swift; sourceTree = "<group>"; };
 		1499DF0425E8BDD200F78D16 /* Computer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
 		1499DF1625E8C24500F78D16 /* FactoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryVC.swift; sourceTree = "<group>"; };
+		14A530B125EE2E0F003E804D /* PrototypePatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypePatternModel.swift; sourceTree = "<group>"; };
+		14A530BE25EE3226003E804D /* PrototypePatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypePatternVC.swift; sourceTree = "<group>"; };
+		14A530C625EE391B003E804D /* MediatorPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorPatternVC.swift; sourceTree = "<group>"; };
+		14A530CB25EE3938003E804D /* MediatorPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorPatternModel.swift; sourceTree = "<group>"; };
 		14CE2EB825EC6D9C00C77641 /* AbstractFactoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryVC.swift; sourceTree = "<group>"; };
 		14CE2EC025EC6E7D00C77641 /* AbstractFactoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryModel.swift; sourceTree = "<group>"; };
 		14CE2EC525EC7DC400C77641 /* TemplateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateVC.swift; sourceTree = "<group>"; };
@@ -645,6 +653,8 @@
 		14E7EAF625E7A450007258C9 /* 原型模式 */ = {
 			isa = PBXGroup;
 			children = (
+				14A530B125EE2E0F003E804D /* PrototypePatternModel.swift */,
+				14A530BE25EE3226003E804D /* PrototypePatternVC.swift */,
 			);
 			path = "原型模式";
 			sourceTree = "<group>";
@@ -652,6 +662,8 @@
 		14E7EAF725E7A459007258C9 /* 中介者模式 */ = {
 			isa = PBXGroup;
 			children = (
+				14A530C625EE391B003E804D /* MediatorPatternVC.swift */,
+				14A530CB25EE3938003E804D /* MediatorPatternModel.swift */,
 			);
 			path = "中介者模式";
 			sourceTree = "<group>";
@@ -1051,6 +1063,7 @@
 				14E59FF625945A7500EB4983 /* ViewController.swift in Sources */,
 				14E5A05D25945F9000EB4983 /* NetWorking.swift in Sources */,
 				14E5A08025945FB900EB4983 /* UIColor+Extension.swift in Sources */,
+				14A530B225EE2E0F003E804D /* PrototypePatternModel.swift in Sources */,
 				14E5A05525945F9000EB4983 /* Manager.swift in Sources */,
 				14E5A07F25945FB900EB4983 /* ThreadTools.swift in Sources */,
 				14E5A08A25945FB900EB4983 /* DateTools.swift in Sources */,
@@ -1065,6 +1078,7 @@
 				14E5A08E25945FB900EB4983 /* Then.swift in Sources */,
 				14E5A0CF2594694300EB4983 /* LZBaseVC.swift in Sources */,
 				14E5A0F525946CA400EB4983 /* DNSPageStyle.swift in Sources */,
+				14A530C725EE391B003E804D /* MediatorPatternVC.swift in Sources */,
 				1499DF0525E8BDD200F78D16 /* Computer.swift in Sources */,
 				14E5A10425946E6C00EB4983 /* HomeTopM.swift in Sources */,
 				14CE2EC625EC7DC500C77641 /* TemplateVC.swift in Sources */,
@@ -1074,10 +1088,12 @@
 				14CE2EB925EC6D9C00C77641 /* AbstractFactoryVC.swift in Sources */,
 				14163825259706F8008F253D /* LZRXCollectionViewRowVC.swift in Sources */,
 				14E5A09525945FB900EB4983 /* UILable+Extension.swift in Sources */,
+				14A530CC25EE3938003E804D /* MediatorPatternModel.swift in Sources */,
 				14E5A08F25945FB900EB4983 /* Number+Extension.swift in Sources */,
 				14E5A0EF25946CA400EB4983 /* DNSPageContentView.swift in Sources */,
 				14CE2EDA25EC925400C77641 /* ProxyPatternVC.swift in Sources */,
 				14E5A08425945FB900EB4983 /* UIImage+Gif.swift in Sources */,
+				14A530BF25EE3226003E804D /* PrototypePatternVC.swift in Sources */,
 				14E5A09425945FB900EB4983 /* CALayer+Extension.swift in Sources */,
 				14E5A0F325946CA400EB4983 /* DNSPageViewManager.swift in Sources */,
 				14E59FF225945A7500EB4983 /* AppDelegate.swift in Sources */,
