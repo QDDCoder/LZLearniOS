@@ -33,7 +33,9 @@ class LZBaseDesignPattern: LZBaseVC {
         self.view.addSubview($0)
     }
     //数据
-    private var dataSource:[String]=["1.单例模式","2.工厂模式","3.抽象工厂模式","4.模板模式","5.建造者模式","6.代理模式","7.原型模式","8.中介者模式","9.命令模式"]
+    private var dataSource:[String]=["1.单例模式","2.工厂模式","3.抽象工厂模式","4.模板模式","5.建造者模式","6.代理模式",
+                                     "7.原型模式","8.中介者模式","9.命令模式","10.责任链模式"]
+    
     //管道
     private var response:BehaviorSubject<[String]> = BehaviorSubject(value: []).asObserver()
     
@@ -99,6 +101,10 @@ extension LZBaseDesignPattern:UITableViewDelegate{
         case 8:
             //命令模式
             lz_pushViewController(viewController: CommandPatternVC())
+            break
+        case 9:
+            //责任链模式
+            lz_pushViewController(viewController: ChainOfResponsibilityPatternVC())
             break
         default:
             break
