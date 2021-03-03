@@ -14,6 +14,8 @@
 		1488823F2595D17B002614AC /* LZRxSwiftBaseUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */; };
 		148882442595D656002614AC /* LZRXSwiftTableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148882432595D656002614AC /* LZRXSwiftTableRowView.swift */; };
 		148E00AC25957D1400BB027A /* LZBaseHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148E00AB25957D1400BB027A /* LZBaseHomeVC.swift */; };
+		149950E925EF7658005B6C61 /* CommandPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149950E825EF7658005B6C61 /* CommandPatternVC.swift */; };
+		149950EE25EF7669005B6C61 /* CommandPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149950ED25EF7669005B6C61 /* CommandPatternModel.swift */; };
 		1499DEFB25E8B91A00F78D16 /* SingleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499DEFA25E8B91A00F78D16 /* SingleModel.swift */; };
 		1499DF0025E8BB9600F78D16 /* SingleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499DEFF25E8BB9600F78D16 /* SingleVC.swift */; };
 		1499DF0525E8BDD200F78D16 /* Computer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1499DF0425E8BDD200F78D16 /* Computer.swift */; };
@@ -131,6 +133,8 @@
 		1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRxSwiftBaseUse.swift; sourceTree = "<group>"; };
 		148882432595D656002614AC /* LZRXSwiftTableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXSwiftTableRowView.swift; sourceTree = "<group>"; };
 		148E00AB25957D1400BB027A /* LZBaseHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZBaseHomeVC.swift; sourceTree = "<group>"; };
+		149950E825EF7658005B6C61 /* CommandPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandPatternVC.swift; sourceTree = "<group>"; };
+		149950ED25EF7669005B6C61 /* CommandPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandPatternModel.swift; sourceTree = "<group>"; };
 		1499DEFA25E8B91A00F78D16 /* SingleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleModel.swift; sourceTree = "<group>"; };
 		1499DEFF25E8BB9600F78D16 /* SingleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleVC.swift; sourceTree = "<group>"; };
 		1499DF0425E8BDD200F78D16 /* Computer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Computer.swift; sourceTree = "<group>"; };
@@ -671,6 +675,8 @@
 		14E7EAF825E7A460007258C9 /* 命令模式 */ = {
 			isa = PBXGroup;
 			children = (
+				149950E825EF7658005B6C61 /* CommandPatternVC.swift */,
+				149950ED25EF7669005B6C61 /* CommandPatternModel.swift */,
 			);
 			path = "命令模式";
 			sourceTree = "<group>";
@@ -1043,6 +1049,7 @@
 				14E5A0FA25946DA900EB4983 /* XFSDHomeVM.swift in Sources */,
 				14E5A08325945FB900EB4983 /* UIWindow+Extension.swift in Sources */,
 				14E5A08225945FB900EB4983 /* UIView_Animation+Extension.swift in Sources */,
+				149950E925EF7658005B6C61 /* CommandPatternVC.swift in Sources */,
 				14CE2EE225EC927800C77641 /* ProxyPatternModel.swift in Sources */,
 				14E5A1232594807400EB4983 /* LZSearchVC.swift in Sources */,
 				14E5A3012594A7EA00EB4983 /* QZIJKPlayerViewController.swift in Sources */,
@@ -1076,6 +1083,7 @@
 				14E5A0A8259460C300EB4983 /* GlobalConfigNet.swift in Sources */,
 				14E5A113259474F100EB4983 /* LZHomeListViewCell.swift in Sources */,
 				14E5A08E25945FB900EB4983 /* Then.swift in Sources */,
+				149950EE25EF7669005B6C61 /* CommandPatternModel.swift in Sources */,
 				14E5A0CF2594694300EB4983 /* LZBaseVC.swift in Sources */,
 				14E5A0F525946CA400EB4983 /* DNSPageStyle.swift in Sources */,
 				14A530C725EE391B003E804D /* MediatorPatternVC.swift in Sources */,
