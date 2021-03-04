@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1405878F25F0D50D00E7C197 /* DecoratorPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405878E25F0D50D00E7C197 /* DecoratorPatternModel.swift */; };
+		1405879425F0D52200E7C197 /* DecoratorPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405879325F0D52200E7C197 /* DecoratorPatternVC.swift */; };
+		1405879925F0D93D00E7C197 /* StrategyPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405879825F0D93D00E7C197 /* StrategyPatternVC.swift */; };
+		1405879E25F0D94C00E7C197 /* StrategyPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405879D25F0D94C00E7C197 /* StrategyPatternModel.swift */; };
 		1416381B2596C062008F253D /* LZRXSwiftTableSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416381A2596C062008F253D /* LZRXSwiftTableSectionView.swift */; };
 		14163825259706F8008F253D /* LZRXCollectionViewRowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14163824259706F8008F253D /* LZRXCollectionViewRowVC.swift */; };
 		1416382D25971A7F008F253D /* LZRXCollectionViewSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416382C25971A7F008F253D /* LZRXCollectionViewSectionVC.swift */; };
@@ -128,6 +132,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1405878E25F0D50D00E7C197 /* DecoratorPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorPatternModel.swift; sourceTree = "<group>"; };
+		1405879325F0D52200E7C197 /* DecoratorPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorPatternVC.swift; sourceTree = "<group>"; };
+		1405879825F0D93D00E7C197 /* StrategyPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyPatternVC.swift; sourceTree = "<group>"; };
+		1405879D25F0D94C00E7C197 /* StrategyPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyPatternModel.swift; sourceTree = "<group>"; };
 		1416381A2596C062008F253D /* LZRXSwiftTableSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXSwiftTableSectionView.swift; sourceTree = "<group>"; };
 		14163824259706F8008F253D /* LZRXCollectionViewRowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXCollectionViewRowVC.swift; sourceTree = "<group>"; };
 		1416382C25971A7F008F253D /* LZRXCollectionViewSectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXCollectionViewSectionVC.swift; sourceTree = "<group>"; };
@@ -697,6 +705,8 @@
 		14E7EAFA25E7A472007258C9 /* 装饰模式 */ = {
 			isa = PBXGroup;
 			children = (
+				1405878E25F0D50D00E7C197 /* DecoratorPatternModel.swift */,
+				1405879325F0D52200E7C197 /* DecoratorPatternVC.swift */,
 			);
 			path = "装饰模式";
 			sourceTree = "<group>";
@@ -704,6 +714,8 @@
 		14E7EAFB25E7A47A007258C9 /* 策略模式 */ = {
 			isa = PBXGroup;
 			children = (
+				1405879825F0D93D00E7C197 /* StrategyPatternVC.swift */,
+				1405879D25F0D94C00E7C197 /* StrategyPatternModel.swift */,
 			);
 			path = "策略模式";
 			sourceTree = "<group>";
@@ -1048,6 +1060,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1405878F25F0D50D00E7C197 /* DecoratorPatternModel.swift in Sources */,
 				1499DF0025E8BB9600F78D16 /* SingleVC.swift in Sources */,
 				14E5A08125945FB900EB4983 /* Int+Extension.swift in Sources */,
 				14E5A0F125946CA400EB4983 /* DNSPageView.swift in Sources */,
@@ -1061,6 +1074,7 @@
 				14E5A3012594A7EA00EB4983 /* QZIJKPlayerViewController.swift in Sources */,
 				14E5A0A9259460C300EB4983 /* GlobalConfig.swift in Sources */,
 				14E5A09B25945FD400EB4983 /* YXPageControl.swift in Sources */,
+				1405879E25F0D94C00E7C197 /* StrategyPatternModel.swift in Sources */,
 				14CE2EC125EC6E7D00C77641 /* AbstractFactoryModel.swift in Sources */,
 				14E5A2FD2594A7EA00EB4983 /* QZSlider.swift in Sources */,
 				14E5A13425948E6500EB4983 /* LZVideoDetailVC.swift in Sources */,
@@ -1095,6 +1109,7 @@
 				14E5A0F525946CA400EB4983 /* DNSPageStyle.swift in Sources */,
 				14A530C725EE391B003E804D /* MediatorPatternVC.swift in Sources */,
 				1499DF0525E8BDD200F78D16 /* Computer.swift in Sources */,
+				1405879925F0D93D00E7C197 /* StrategyPatternVC.swift in Sources */,
 				14E5A10425946E6C00EB4983 /* HomeTopM.swift in Sources */,
 				14CE2EC625EC7DC500C77641 /* TemplateVC.swift in Sources */,
 				148E00AC25957D1400BB027A /* LZBaseHomeVC.swift in Sources */,
@@ -1128,6 +1143,7 @@
 				14E5A2FF2594A7EA00EB4983 /* QZIJKPlayerInterface.swift in Sources */,
 				14E5A0F025946CA400EB4983 /* DNSPageHelper.swift in Sources */,
 				14E5A0B12594629C00EB4983 /* ToastView.swift in Sources */,
+				1405879425F0D52200E7C197 /* DecoratorPatternVC.swift in Sources */,
 				14E5A2FE2594A7EA00EB4983 /* QZIJKPlayerPresenter.swift in Sources */,
 				1416381B2596C062008F253D /* LZRXSwiftTableSectionView.swift in Sources */,
 				14E5A11E25947F3300EB4983 /* URefresh.swift in Sources */,
