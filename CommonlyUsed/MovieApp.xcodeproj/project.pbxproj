@@ -11,6 +11,10 @@
 		1405879425F0D52200E7C197 /* DecoratorPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405879325F0D52200E7C197 /* DecoratorPatternVC.swift */; };
 		1405879925F0D93D00E7C197 /* StrategyPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405879825F0D93D00E7C197 /* StrategyPatternVC.swift */; };
 		1405879E25F0D94C00E7C197 /* StrategyPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405879D25F0D94C00E7C197 /* StrategyPatternModel.swift */; };
+		1408FA5A25F220F50084DBDB /* AdapterPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1408FA5925F220F50084DBDB /* AdapterPatternModel.swift */; };
+		1408FA5F25F2210B0084DBDB /* AdapterPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1408FA5E25F2210B0084DBDB /* AdapterPatternVC.swift */; };
+		1408FA6A25F2259F0084DBDB /* IteratorPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1408FA6925F2259F0084DBDB /* IteratorPatternVC.swift */; };
+		1408FA6F25F225B60084DBDB /* IteratorPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1408FA6E25F225B60084DBDB /* IteratorPatternModel.swift */; };
 		1416381B2596C062008F253D /* LZRXSwiftTableSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416381A2596C062008F253D /* LZRXSwiftTableSectionView.swift */; };
 		14163825259706F8008F253D /* LZRXCollectionViewRowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14163824259706F8008F253D /* LZRXCollectionViewRowVC.swift */; };
 		1416382D25971A7F008F253D /* LZRXCollectionViewSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416382C25971A7F008F253D /* LZRXCollectionViewSectionVC.swift */; };
@@ -136,6 +140,10 @@
 		1405879325F0D52200E7C197 /* DecoratorPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorPatternVC.swift; sourceTree = "<group>"; };
 		1405879825F0D93D00E7C197 /* StrategyPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyPatternVC.swift; sourceTree = "<group>"; };
 		1405879D25F0D94C00E7C197 /* StrategyPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyPatternModel.swift; sourceTree = "<group>"; };
+		1408FA5925F220F50084DBDB /* AdapterPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterPatternModel.swift; sourceTree = "<group>"; };
+		1408FA5E25F2210B0084DBDB /* AdapterPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterPatternVC.swift; sourceTree = "<group>"; };
+		1408FA6925F2259F0084DBDB /* IteratorPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorPatternVC.swift; sourceTree = "<group>"; };
+		1408FA6E25F225B60084DBDB /* IteratorPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteratorPatternModel.swift; sourceTree = "<group>"; };
 		1416381A2596C062008F253D /* LZRXSwiftTableSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXSwiftTableSectionView.swift; sourceTree = "<group>"; };
 		14163824259706F8008F253D /* LZRXCollectionViewRowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXCollectionViewRowVC.swift; sourceTree = "<group>"; };
 		1416382C25971A7F008F253D /* LZRXCollectionViewSectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXCollectionViewSectionVC.swift; sourceTree = "<group>"; };
@@ -723,6 +731,8 @@
 		14E7EAFC25E7A483007258C9 /* 适配器模式 */ = {
 			isa = PBXGroup;
 			children = (
+				1408FA5925F220F50084DBDB /* AdapterPatternModel.swift */,
+				1408FA5E25F2210B0084DBDB /* AdapterPatternVC.swift */,
 			);
 			path = "适配器模式";
 			sourceTree = "<group>";
@@ -730,6 +740,8 @@
 		14E7EAFD25E7A48B007258C9 /* 迭代器模式 */ = {
 			isa = PBXGroup;
 			children = (
+				1408FA6925F2259F0084DBDB /* IteratorPatternVC.swift */,
+				1408FA6E25F225B60084DBDB /* IteratorPatternModel.swift */,
 			);
 			path = "迭代器模式";
 			sourceTree = "<group>";
@@ -1073,6 +1085,7 @@
 				14E5A1232594807400EB4983 /* LZSearchVC.swift in Sources */,
 				14E5A3012594A7EA00EB4983 /* QZIJKPlayerViewController.swift in Sources */,
 				14E5A0A9259460C300EB4983 /* GlobalConfig.swift in Sources */,
+				1408FA6A25F2259F0084DBDB /* IteratorPatternVC.swift in Sources */,
 				14E5A09B25945FD400EB4983 /* YXPageControl.swift in Sources */,
 				1405879E25F0D94C00E7C197 /* StrategyPatternModel.swift in Sources */,
 				14CE2EC125EC6E7D00C77641 /* AbstractFactoryModel.swift in Sources */,
@@ -1115,6 +1128,7 @@
 				148E00AC25957D1400BB027A /* LZBaseHomeVC.swift in Sources */,
 				14E7EAE925E7A2E3007258C9 /* LZBaseDesignPattern.swift in Sources */,
 				1488822325959A09002614AC /* LZRXSwiftVC.swift in Sources */,
+				1408FA5A25F220F50084DBDB /* AdapterPatternModel.swift in Sources */,
 				14CE2EB925EC6D9C00C77641 /* AbstractFactoryVC.swift in Sources */,
 				14163825259706F8008F253D /* LZRXCollectionViewRowVC.swift in Sources */,
 				14E5A09525945FB900EB4983 /* UILable+Extension.swift in Sources */,
@@ -1138,6 +1152,7 @@
 				14E5A09025945FB900EB4983 /* LayoutButton.swift in Sources */,
 				149950F325EF7DD9005B6C61 /* ChainOfResponsibilityPatternVC.swift in Sources */,
 				14E5A3032594A7EA00EB4983 /* QZIJKPlayerPlayModel.swift in Sources */,
+				1408FA5F25F2210B0084DBDB /* AdapterPatternVC.swift in Sources */,
 				14E5A3052594A7EA00EB4983 /* QZIJKPlayerTableViewCell.swift in Sources */,
 				14E5A10E259472F000EB4983 /* HomeListVC.swift in Sources */,
 				14E5A2FF2594A7EA00EB4983 /* QZIJKPlayerInterface.swift in Sources */,
@@ -1154,6 +1169,7 @@
 				148882442595D656002614AC /* LZRXSwiftTableRowView.swift in Sources */,
 				14CE2ECB25EC7DDB00C77641 /* TemplateModel.swift in Sources */,
 				14E5A05625945F9000EB4983 /* HomeApi.swift in Sources */,
+				1408FA6F25F225B60084DBDB /* IteratorPatternModel.swift in Sources */,
 				14E5A05E25945F9000EB4983 /* NSCacheTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
