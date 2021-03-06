@@ -42,6 +42,10 @@
 		14CE2ED525EC86B100C77641 /* BuilderPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2ED425EC86B100C77641 /* BuilderPatternModel.swift */; };
 		14CE2EDA25EC925400C77641 /* ProxyPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2ED925EC925400C77641 /* ProxyPatternVC.swift */; };
 		14CE2EE225EC927800C77641 /* ProxyPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE2EE125EC927800C77641 /* ProxyPatternModel.swift */; };
+		14D4D61E25F3712400440DCA /* CompositePatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D4D61D25F3712400440DCA /* CompositePatternModel.swift */; };
+		14D4D62325F3713700440DCA /* CompositePatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D4D62225F3713700440DCA /* CompositePatternVC.swift */; };
+		14D4D62825F3796900440DCA /* ObserverPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D4D62725F3796900440DCA /* ObserverPatternModel.swift */; };
+		14D4D62D25F3797A00440DCA /* ObserverPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D4D62C25F3797A00440DCA /* ObserverPatternVC.swift */; };
 		14E59FF225945A7500EB4983 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E59FF125945A7500EB4983 /* AppDelegate.swift */; };
 		14E59FF625945A7500EB4983 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E59FF525945A7500EB4983 /* ViewController.swift */; };
 		14E59FFB25945A7600EB4983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E59FFA25945A7600EB4983 /* Assets.xcassets */; };
@@ -171,6 +175,10 @@
 		14CE2ED425EC86B100C77641 /* BuilderPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderPatternModel.swift; sourceTree = "<group>"; };
 		14CE2ED925EC925400C77641 /* ProxyPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyPatternVC.swift; sourceTree = "<group>"; };
 		14CE2EE125EC927800C77641 /* ProxyPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyPatternModel.swift; sourceTree = "<group>"; };
+		14D4D61D25F3712400440DCA /* CompositePatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositePatternModel.swift; sourceTree = "<group>"; };
+		14D4D62225F3713700440DCA /* CompositePatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositePatternVC.swift; sourceTree = "<group>"; };
+		14D4D62725F3796900440DCA /* ObserverPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverPatternModel.swift; sourceTree = "<group>"; };
+		14D4D62C25F3797A00440DCA /* ObserverPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverPatternVC.swift; sourceTree = "<group>"; };
 		14E59FEE25945A7500EB4983 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E59FF125945A7500EB4983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14E59FF525945A7500EB4983 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -749,6 +757,8 @@
 		14E7EAFE25E7A493007258C9 /* 组合模式 */ = {
 			isa = PBXGroup;
 			children = (
+				14D4D61D25F3712400440DCA /* CompositePatternModel.swift */,
+				14D4D62225F3713700440DCA /* CompositePatternVC.swift */,
 			);
 			path = "组合模式";
 			sourceTree = "<group>";
@@ -756,6 +766,8 @@
 		14E7EAFF25E7A49B007258C9 /* 观察者模式 */ = {
 			isa = PBXGroup;
 			children = (
+				14D4D62725F3796900440DCA /* ObserverPatternModel.swift */,
+				14D4D62C25F3797A00440DCA /* ObserverPatternVC.swift */,
 			);
 			path = "观察者模式";
 			sourceTree = "<group>";
@@ -1117,6 +1129,7 @@
 				14E5A0A8259460C300EB4983 /* GlobalConfigNet.swift in Sources */,
 				14E5A113259474F100EB4983 /* LZHomeListViewCell.swift in Sources */,
 				14E5A08E25945FB900EB4983 /* Then.swift in Sources */,
+				14D4D62325F3713700440DCA /* CompositePatternVC.swift in Sources */,
 				149950EE25EF7669005B6C61 /* CommandPatternModel.swift in Sources */,
 				14E5A0CF2594694300EB4983 /* LZBaseVC.swift in Sources */,
 				14E5A0F525946CA400EB4983 /* DNSPageStyle.swift in Sources */,
@@ -1136,6 +1149,7 @@
 				14E5A08F25945FB900EB4983 /* Number+Extension.swift in Sources */,
 				14E5A0EF25946CA400EB4983 /* DNSPageContentView.swift in Sources */,
 				14CE2EDA25EC925400C77641 /* ProxyPatternVC.swift in Sources */,
+				14D4D61E25F3712400440DCA /* CompositePatternModel.swift in Sources */,
 				14E5A08425945FB900EB4983 /* UIImage+Gif.swift in Sources */,
 				14A530BF25EE3226003E804D /* PrototypePatternVC.swift in Sources */,
 				14E5A09425945FB900EB4983 /* CALayer+Extension.swift in Sources */,
@@ -1146,6 +1160,7 @@
 				1416382D25971A7F008F253D /* LZRXCollectionViewSectionVC.swift in Sources */,
 				14E5A07E25945FB900EB4983 /* UIImageView+Extension.swift in Sources */,
 				14E5A0FF25946E3400EB4983 /* ViewModelType.swift in Sources */,
+				14D4D62825F3796900440DCA /* ObserverPatternModel.swift in Sources */,
 				14E5A0F225946CA400EB4983 /* DNSPageTitleView.swift in Sources */,
 				14E5A08925945FB900EB4983 /* UIImage+Extension.swift in Sources */,
 				14E5A10925946E9200EB4983 /* LZBaseM.swift in Sources */,
@@ -1168,6 +1183,7 @@
 				14E5A09125945FB900EB4983 /* Dictionary+Extension.swift in Sources */,
 				148882442595D656002614AC /* LZRXSwiftTableRowView.swift in Sources */,
 				14CE2ECB25EC7DDB00C77641 /* TemplateModel.swift in Sources */,
+				14D4D62D25F3797A00440DCA /* ObserverPatternVC.swift in Sources */,
 				14E5A05625945F9000EB4983 /* HomeApi.swift in Sources */,
 				1408FA6F25F225B60084DBDB /* IteratorPatternModel.swift in Sources */,
 				14E5A05E25945F9000EB4983 /* NSCacheTool.swift in Sources */,
