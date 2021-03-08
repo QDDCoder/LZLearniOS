@@ -18,6 +18,10 @@
 		1416381B2596C062008F253D /* LZRXSwiftTableSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416381A2596C062008F253D /* LZRXSwiftTableSectionView.swift */; };
 		14163825259706F8008F253D /* LZRXCollectionViewRowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14163824259706F8008F253D /* LZRXCollectionViewRowVC.swift */; };
 		1416382D25971A7F008F253D /* LZRXCollectionViewSectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416382C25971A7F008F253D /* LZRXCollectionViewSectionVC.swift */; };
+		1435DA4925F612390081166C /* BridgePatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1435DA4825F612390081166C /* BridgePatternModel.swift */; };
+		1435DA4E25F612490081166C /* BridgePatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1435DA4D25F612490081166C /* BridgePatternVC.swift */; };
+		1435DA5325F616D90081166C /* FacadePatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1435DA5225F616D90081166C /* FacadePatternModel.swift */; };
+		1435DA5825F616EA0081166C /* FacadePatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1435DA5725F616EA0081166C /* FacadePatternVC.swift */; };
 		1488822325959A09002614AC /* LZRXSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488822225959A09002614AC /* LZRXSwiftVC.swift */; };
 		1488823F2595D17B002614AC /* LZRxSwiftBaseUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */; };
 		148882442595D656002614AC /* LZRXSwiftTableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148882432595D656002614AC /* LZRXSwiftTableRowView.swift */; };
@@ -151,6 +155,10 @@
 		1416381A2596C062008F253D /* LZRXSwiftTableSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXSwiftTableSectionView.swift; sourceTree = "<group>"; };
 		14163824259706F8008F253D /* LZRXCollectionViewRowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXCollectionViewRowVC.swift; sourceTree = "<group>"; };
 		1416382C25971A7F008F253D /* LZRXCollectionViewSectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXCollectionViewSectionVC.swift; sourceTree = "<group>"; };
+		1435DA4825F612390081166C /* BridgePatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgePatternModel.swift; sourceTree = "<group>"; };
+		1435DA4D25F612490081166C /* BridgePatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgePatternVC.swift; sourceTree = "<group>"; };
+		1435DA5225F616D90081166C /* FacadePatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadePatternModel.swift; sourceTree = "<group>"; };
+		1435DA5725F616EA0081166C /* FacadePatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadePatternVC.swift; sourceTree = "<group>"; };
 		1488822225959A09002614AC /* LZRXSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXSwiftVC.swift; sourceTree = "<group>"; };
 		1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRxSwiftBaseUse.swift; sourceTree = "<group>"; };
 		148882432595D656002614AC /* LZRXSwiftTableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXSwiftTableRowView.swift; sourceTree = "<group>"; };
@@ -592,29 +600,29 @@
 		14E7EAE325E7A1A3007258C9 /* 23种设计模式 */ = {
 			isa = PBXGroup;
 			children = (
-				14E7EB0625E7A4D5007258C9 /* 桥梁模式 */,
+				14E7EAF025E7A408007258C9 /* 单例模式 */,
+				14E7EAF125E7A424007258C9 /* 工厂模式 */,
+				14E7EAF225E7A42D007258C9 /* 抽象工厂模式 */,
+				14E7EAF425E7A43E007258C9 /* 建造者模式 */,
+				14E7EAF625E7A450007258C9 /* 原型模式 */,
+				14E7EAFC25E7A483007258C9 /* 适配器模式 */,
+				14E7EB0625E7A4D5007258C9 /* 桥接模式 */,
+				14E7EAFA25E7A472007258C9 /* 装饰模式 */,
+				14E7EAFE25E7A493007258C9 /* 组合模式 */,
+				14E7EB0025E7A4A4007258C9 /* 外观模式 */,
 				14E7EB0525E7A4CC007258C9 /* 享元模式 */,
+				14E7EAF525E7A446007258C9 /* 代理模式 */,
+				14E7EAF325E7A434007258C9 /* 模板方法模式 */,
+				14E7EAF825E7A460007258C9 /* 命令模式 */,
+				14E7EAFD25E7A48B007258C9 /* 迭代器模式 */,
+				14E7EAFF25E7A49B007258C9 /* 观察者模式 */,
+				14E7EAF725E7A459007258C9 /* 中介者模式 */,
+				14E7EB0125E7A4AB007258C9 /* 备忘录模式 */,
 				14E7EB0425E7A4C5007258C9 /* 解释器模式 */,
 				14E7EB0325E7A4BD007258C9 /* 状态模式 */,
-				14E7EB0225E7A4B5007258C9 /* 访问者模式 */,
-				14E7EB0125E7A4AB007258C9 /* 备忘录模式 */,
-				14E7EB0025E7A4A4007258C9 /* 门面模式 */,
-				14E7EAFF25E7A49B007258C9 /* 观察者模式 */,
-				14E7EAFE25E7A493007258C9 /* 组合模式 */,
-				14E7EAFD25E7A48B007258C9 /* 迭代器模式 */,
-				14E7EAFC25E7A483007258C9 /* 适配器模式 */,
 				14E7EAFB25E7A47A007258C9 /* 策略模式 */,
-				14E7EAFA25E7A472007258C9 /* 装饰模式 */,
 				14E7EAF925E7A469007258C9 /* 责任链模式 */,
-				14E7EAF825E7A460007258C9 /* 命令模式 */,
-				14E7EAF725E7A459007258C9 /* 中介者模式 */,
-				14E7EAF625E7A450007258C9 /* 原型模式 */,
-				14E7EAF525E7A446007258C9 /* 代理模式 */,
-				14E7EAF425E7A43E007258C9 /* 建造者模式 */,
-				14E7EAF325E7A434007258C9 /* 模板方法模式 */,
-				14E7EAF225E7A42D007258C9 /* 抽象工厂模式 */,
-				14E7EAF125E7A424007258C9 /* 工厂模式 */,
-				14E7EAF025E7A408007258C9 /* 单例模式 */,
+				14E7EB0225E7A4B5007258C9 /* 访问者模式 */,
 				14E7EAE425E7A1D5007258C9 /* c */,
 			);
 			path = "23种设计模式";
@@ -772,11 +780,13 @@
 			path = "观察者模式";
 			sourceTree = "<group>";
 		};
-		14E7EB0025E7A4A4007258C9 /* 门面模式 */ = {
+		14E7EB0025E7A4A4007258C9 /* 外观模式 */ = {
 			isa = PBXGroup;
 			children = (
+				1435DA5225F616D90081166C /* FacadePatternModel.swift */,
+				1435DA5725F616EA0081166C /* FacadePatternVC.swift */,
 			);
-			path = "门面模式";
+			path = "外观模式";
 			sourceTree = "<group>";
 		};
 		14E7EB0125E7A4AB007258C9 /* 备忘录模式 */ = {
@@ -814,11 +824,13 @@
 			path = "享元模式";
 			sourceTree = "<group>";
 		};
-		14E7EB0625E7A4D5007258C9 /* 桥梁模式 */ = {
+		14E7EB0625E7A4D5007258C9 /* 桥接模式 */ = {
 			isa = PBXGroup;
 			children = (
+				1435DA4825F612390081166C /* BridgePatternModel.swift */,
+				1435DA4D25F612490081166C /* BridgePatternVC.swift */,
 			);
-			path = "桥梁模式";
+			path = "桥接模式";
 			sourceTree = "<group>";
 		};
 		5F6294C745A11895D09F2577 /* Frameworks */ = {
@@ -1100,6 +1112,7 @@
 				1408FA6A25F2259F0084DBDB /* IteratorPatternVC.swift in Sources */,
 				14E5A09B25945FD400EB4983 /* YXPageControl.swift in Sources */,
 				1405879E25F0D94C00E7C197 /* StrategyPatternModel.swift in Sources */,
+				1435DA5325F616D90081166C /* FacadePatternModel.swift in Sources */,
 				14CE2EC125EC6E7D00C77641 /* AbstractFactoryModel.swift in Sources */,
 				14E5A2FD2594A7EA00EB4983 /* QZSlider.swift in Sources */,
 				14E5A13425948E6500EB4983 /* LZVideoDetailVC.swift in Sources */,
@@ -1115,6 +1128,7 @@
 				14E59FF625945A7500EB4983 /* ViewController.swift in Sources */,
 				14E5A05D25945F9000EB4983 /* NetWorking.swift in Sources */,
 				14E5A08025945FB900EB4983 /* UIColor+Extension.swift in Sources */,
+				1435DA5825F616EA0081166C /* FacadePatternVC.swift in Sources */,
 				14A530B225EE2E0F003E804D /* PrototypePatternModel.swift in Sources */,
 				14E5A05525945F9000EB4983 /* Manager.swift in Sources */,
 				14E5A07F25945FB900EB4983 /* ThreadTools.swift in Sources */,
@@ -1138,6 +1152,7 @@
 				1405879925F0D93D00E7C197 /* StrategyPatternVC.swift in Sources */,
 				14E5A10425946E6C00EB4983 /* HomeTopM.swift in Sources */,
 				14CE2EC625EC7DC500C77641 /* TemplateVC.swift in Sources */,
+				1435DA4E25F612490081166C /* BridgePatternVC.swift in Sources */,
 				148E00AC25957D1400BB027A /* LZBaseHomeVC.swift in Sources */,
 				14E7EAE925E7A2E3007258C9 /* LZBaseDesignPattern.swift in Sources */,
 				1488822325959A09002614AC /* LZRXSwiftVC.swift in Sources */,
@@ -1155,6 +1170,7 @@
 				14E5A09425945FB900EB4983 /* CALayer+Extension.swift in Sources */,
 				14E5A0F325946CA400EB4983 /* DNSPageViewManager.swift in Sources */,
 				14E59FF225945A7500EB4983 /* AppDelegate.swift in Sources */,
+				1435DA4925F612390081166C /* BridgePatternModel.swift in Sources */,
 				1499DEFB25E8B91A00F78D16 /* SingleModel.swift in Sources */,
 				14E5A1292594833100EB4983 /* LZCustomSearchView.swift in Sources */,
 				1416382D25971A7F008F253D /* LZRXCollectionViewSectionVC.swift in Sources */,

@@ -33,9 +33,9 @@ class LZBaseDesignPattern: LZBaseVC {
         self.view.addSubview($0)
     }
     //数据
-    private var dataSource:[String]=["1.单例模式","2.工厂模式","3.抽象工厂模式","4.模板模式","5.建造者模式","6.代理模式",
-                                     "7.原型模式","8.中介者模式","9.命令模式","10.责任链模式","11.装饰模式","12.策略模式",
-                                    "13.适配器模式","14.迭代器模式","15.组合模式","16.观察者模式"]
+    private var dataSource:[String]=["1.单例模式","2.工厂模式","3.抽象工厂模式","4.建造者模式","5.原型模式"
+                                     ,"6.适配器模式","7.桥接模式","8.装饰模式","9.组合模式","10.外观模式","11.享元模式","12.代理模式",
+                                    "13.模版方法模式","14.命令模式","15.迭代器模式","16.观察者模式","17.中介者模式","18.备忘录模式","19.解释器模式","20.状态模式","21.策略模式","22.职责链模式","23.访问者模式"]
     
     //管道
     private var response:BehaviorSubject<[String]> = BehaviorSubject(value: []).asObserver()
@@ -66,70 +66,103 @@ extension LZBaseDesignPattern:UITableViewDelegate{
     /// 处理点击事件的处理
     /// - Returns: 点击的indexPath
     private func cellClick(withIndexPath indexPath:IndexPath)  {
-        switch indexPath.row {
-        case 0:
+        switch indexPath.row+1 {
+        /**
+         "1.单例模式","2.工厂模式","3.抽象工厂模式","4.建造者模式","5.原型模式"
+         */
+        
+        case 1:
             //单例模式
             lz_pushViewController(viewController: SingleVC())
             break
-        case 1:
+        case 2:
             //工厂模式
             lz_pushViewController(viewController: FactoryVC())
             break
-        case 2:
+        case 3:
             //抽象工厂模式
             lz_pushViewController(viewController: AbstractFactoryVC())
-            break
-        case 3:
-            //模板模式
-            lz_pushViewController(viewController: TemplateVC())
             break
         case 4:
             //建造者模式
             lz_pushViewController(viewController: BuilderPatternVC())
             break
         case 5:
-            //代理模式
-            lz_pushViewController(viewController: ProxyPatternVC())
-            break
-        case 6:
             //原型模式
             lz_pushViewController(viewController: PrototypePatternVC())
             break
-        case 7:
-            //中介者模式
-            lz_pushViewController(viewController: MediatorPatternVC())
-            break
-        case 8:
-            //命令模式
-            lz_pushViewController(viewController: CommandPatternVC())
-            break
-        case 9:
-            //责任链模式
-            lz_pushViewController(viewController: ChainOfResponsibilityPatternVC())
-            break
-        case 10:
-            //装饰模式
-            lz_pushViewController(viewController: DecoratorPatternVC())
-            break
-        case 11:
-            //策略模式
-            lz_pushViewController(viewController: StrategyPatternVC())
-            break
-        case 12:
+        /**
+         "6.适配器模式","7.桥接模式","8.装饰模式","9.组合模式","10.外观模式","11.享元模式","12.代理模式"
+         */
+        case 6:
             //适配器模式
             lz_pushViewController(viewController: AdapterPatternVC())
             break
-        case 13:
-            //迭代器模式
-            lz_pushViewController(viewController: IteratorPatternVC())
+        case 7:
+            //桥接模式
+            lz_pushViewController(viewController: BridgePatternVC())
             break
-        case 14:
+        case 8:
+            //装饰模式
+            lz_pushViewController(viewController: DecoratorPatternVC())
+            break
+        case 9:
             //组合设计模式
             lz_pushViewController(viewController: CompositePatternVC())
             break
+        case 10:
+            //外观模式
+            lz_pushViewController(viewController: FacadePatternVC())
+            break
+        case 11:
+            //享元模式
+            break
+        case 12:
+            //代理模式
+            lz_pushViewController(viewController: ProxyPatternVC())
+            break
+        /**
+         "13.模版方法模式","14.命令模式","15.迭代器模式","16.观察者模式","17.中介者模式","18.备忘录模式","19.解释器模式","20.状态模式","21.策略模式","22.职责链模式","23.访问者模式"
+         */
+        case 13:
+            //模板模式
+            lz_pushViewController(viewController: TemplateVC())
+            break
+        case 14:
+            //命令模式
+            lz_pushViewController(viewController: CommandPatternVC())
+            break
         case 15:
+            //迭代器模式
+            lz_pushViewController(viewController: IteratorPatternVC())
+            break
+        case 16:
             //观察者模式
             lz_pushViewController(viewController: ObserverPatternVC())
+            break
+        case 17:
+            //中介者模式
+            lz_pushViewController(viewController: MediatorPatternVC())
+            break
+        case 18:
+            //备忘录模式
+            break
+        case 19:
+            //解释器模式
+            break
+        case 20:
+            //状态模式
+            break
+        case 21:
+            //策略模式
+            lz_pushViewController(viewController: StrategyPatternVC())
+            break
+        case 22:
+            //责任链模式
+            lz_pushViewController(viewController: ChainOfResponsibilityPatternVC())
+            break
+        case 23:
+            //访问者模式
             break
         default:
             break
