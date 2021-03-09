@@ -22,6 +22,10 @@
 		1435DA4E25F612490081166C /* BridgePatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1435DA4D25F612490081166C /* BridgePatternVC.swift */; };
 		1435DA5325F616D90081166C /* FacadePatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1435DA5225F616D90081166C /* FacadePatternModel.swift */; };
 		1435DA5825F616EA0081166C /* FacadePatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1435DA5725F616EA0081166C /* FacadePatternVC.swift */; };
+		147D280B25F756040088D079 /* FlyweightPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D280A25F756040088D079 /* FlyweightPatternVC.swift */; };
+		147D281025F756160088D079 /* FlyweightPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D280F25F756160088D079 /* FlyweightPatternModel.swift */; };
+		147D281525F75E4F0088D079 /* MementoPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D281425F75E4F0088D079 /* MementoPatternModel.swift */; };
+		147D281A25F75E620088D079 /* MementoPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D281925F75E620088D079 /* MementoPatternVC.swift */; };
 		1488822325959A09002614AC /* LZRXSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488822225959A09002614AC /* LZRXSwiftVC.swift */; };
 		1488823F2595D17B002614AC /* LZRxSwiftBaseUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */; };
 		148882442595D656002614AC /* LZRXSwiftTableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148882432595D656002614AC /* LZRXSwiftTableRowView.swift */; };
@@ -159,6 +163,10 @@
 		1435DA4D25F612490081166C /* BridgePatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgePatternVC.swift; sourceTree = "<group>"; };
 		1435DA5225F616D90081166C /* FacadePatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadePatternModel.swift; sourceTree = "<group>"; };
 		1435DA5725F616EA0081166C /* FacadePatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadePatternVC.swift; sourceTree = "<group>"; };
+		147D280A25F756040088D079 /* FlyweightPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightPatternVC.swift; sourceTree = "<group>"; };
+		147D280F25F756160088D079 /* FlyweightPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightPatternModel.swift; sourceTree = "<group>"; };
+		147D281425F75E4F0088D079 /* MementoPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoPatternModel.swift; sourceTree = "<group>"; };
+		147D281925F75E620088D079 /* MementoPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoPatternVC.swift; sourceTree = "<group>"; };
 		1488822225959A09002614AC /* LZRXSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXSwiftVC.swift; sourceTree = "<group>"; };
 		1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRxSwiftBaseUse.swift; sourceTree = "<group>"; };
 		148882432595D656002614AC /* LZRXSwiftTableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXSwiftTableRowView.swift; sourceTree = "<group>"; };
@@ -792,6 +800,8 @@
 		14E7EB0125E7A4AB007258C9 /* 备忘录模式 */ = {
 			isa = PBXGroup;
 			children = (
+				147D281425F75E4F0088D079 /* MementoPatternModel.swift */,
+				147D281925F75E620088D079 /* MementoPatternVC.swift */,
 			);
 			path = "备忘录模式";
 			sourceTree = "<group>";
@@ -820,6 +830,8 @@
 		14E7EB0525E7A4CC007258C9 /* 享元模式 */ = {
 			isa = PBXGroup;
 			children = (
+				147D280A25F756040088D079 /* FlyweightPatternVC.swift */,
+				147D280F25F756160088D079 /* FlyweightPatternModel.swift */,
 			);
 			path = "享元模式";
 			sourceTree = "<group>";
@@ -1101,6 +1113,7 @@
 				14E5A08125945FB900EB4983 /* Int+Extension.swift in Sources */,
 				14E5A0F125946CA400EB4983 /* DNSPageView.swift in Sources */,
 				14E5A08525945FB900EB4983 /* JKGlobalDefinition.swift in Sources */,
+				147D280B25F756040088D079 /* FlyweightPatternVC.swift in Sources */,
 				14E5A0FA25946DA900EB4983 /* XFSDHomeVM.swift in Sources */,
 				14E5A08325945FB900EB4983 /* UIWindow+Extension.swift in Sources */,
 				14E5A08225945FB900EB4983 /* UIView_Animation+Extension.swift in Sources */,
@@ -1109,12 +1122,14 @@
 				14E5A1232594807400EB4983 /* LZSearchVC.swift in Sources */,
 				14E5A3012594A7EA00EB4983 /* QZIJKPlayerViewController.swift in Sources */,
 				14E5A0A9259460C300EB4983 /* GlobalConfig.swift in Sources */,
+				147D281A25F75E620088D079 /* MementoPatternVC.swift in Sources */,
 				1408FA6A25F2259F0084DBDB /* IteratorPatternVC.swift in Sources */,
 				14E5A09B25945FD400EB4983 /* YXPageControl.swift in Sources */,
 				1405879E25F0D94C00E7C197 /* StrategyPatternModel.swift in Sources */,
 				1435DA5325F616D90081166C /* FacadePatternModel.swift in Sources */,
 				14CE2EC125EC6E7D00C77641 /* AbstractFactoryModel.swift in Sources */,
 				14E5A2FD2594A7EA00EB4983 /* QZSlider.swift in Sources */,
+				147D281025F756160088D079 /* FlyweightPatternModel.swift in Sources */,
 				14E5A13425948E6500EB4983 /* LZVideoDetailVC.swift in Sources */,
 				14E5A3002594A7EA00EB4983 /* QZPlayerResource.swift in Sources */,
 				14CE2ED025EC869E00C77641 /* BuilderPatternVC.swift in Sources */,
@@ -1186,6 +1201,7 @@
 				1408FA5F25F2210B0084DBDB /* AdapterPatternVC.swift in Sources */,
 				14E5A3052594A7EA00EB4983 /* QZIJKPlayerTableViewCell.swift in Sources */,
 				14E5A10E259472F000EB4983 /* HomeListVC.swift in Sources */,
+				147D281525F75E4F0088D079 /* MementoPatternModel.swift in Sources */,
 				14E5A2FF2594A7EA00EB4983 /* QZIJKPlayerInterface.swift in Sources */,
 				14E5A0F025946CA400EB4983 /* DNSPageHelper.swift in Sources */,
 				14E5A0B12594629C00EB4983 /* ToastView.swift in Sources */,

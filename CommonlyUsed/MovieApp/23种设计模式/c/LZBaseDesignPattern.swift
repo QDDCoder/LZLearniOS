@@ -116,6 +116,7 @@ extension LZBaseDesignPattern:UITableViewDelegate{
             break
         case 11:
             //享元模式
+            lz_pushViewController(viewController: FlyweightPatternVC())
             break
         case 12:
             //代理模式
@@ -146,6 +147,7 @@ extension LZBaseDesignPattern:UITableViewDelegate{
             break
         case 18:
             //备忘录模式
+            lz_pushViewController(viewController: MementoPatternVC())
             break
         case 19:
             //解释器模式
