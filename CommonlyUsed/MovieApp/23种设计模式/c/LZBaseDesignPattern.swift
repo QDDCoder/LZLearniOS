@@ -151,9 +151,11 @@ extension LZBaseDesignPattern:UITableViewDelegate{
             break
         case 19:
             //解释器模式
+            lz_pushViewController(viewController: InterpreterPatternVC())
             break
         case 20:
             //状态模式
+            lz_pushViewController(viewController: StatePatternVC())
             break
         case 21:
             //策略模式

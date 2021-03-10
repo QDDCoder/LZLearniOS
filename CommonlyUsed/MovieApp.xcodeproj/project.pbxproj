@@ -26,6 +26,10 @@
 		147D281025F756160088D079 /* FlyweightPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D280F25F756160088D079 /* FlyweightPatternModel.swift */; };
 		147D281525F75E4F0088D079 /* MementoPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D281425F75E4F0088D079 /* MementoPatternModel.swift */; };
 		147D281A25F75E620088D079 /* MementoPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D281925F75E620088D079 /* MementoPatternVC.swift */; };
+		147D49B525F8BF610049B9BE /* InterpreterPatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D49B425F8BF610049B9BE /* InterpreterPatternModel.swift */; };
+		147D49BA25F8BF720049B9BE /* InterpreterPatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D49B925F8BF720049B9BE /* InterpreterPatternVC.swift */; };
+		147D49C925F8C3470049B9BE /* StatePatternVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D49C825F8C3470049B9BE /* StatePatternVC.swift */; };
+		147D49CE25F8C3550049B9BE /* StatePatternModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147D49CD25F8C3550049B9BE /* StatePatternModel.swift */; };
 		1488822325959A09002614AC /* LZRXSwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488822225959A09002614AC /* LZRXSwiftVC.swift */; };
 		1488823F2595D17B002614AC /* LZRxSwiftBaseUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */; };
 		148882442595D656002614AC /* LZRXSwiftTableRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148882432595D656002614AC /* LZRXSwiftTableRowView.swift */; };
@@ -167,6 +171,10 @@
 		147D280F25F756160088D079 /* FlyweightPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightPatternModel.swift; sourceTree = "<group>"; };
 		147D281425F75E4F0088D079 /* MementoPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoPatternModel.swift; sourceTree = "<group>"; };
 		147D281925F75E620088D079 /* MementoPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoPatternVC.swift; sourceTree = "<group>"; };
+		147D49B425F8BF610049B9BE /* InterpreterPatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterPatternModel.swift; sourceTree = "<group>"; };
+		147D49B925F8BF720049B9BE /* InterpreterPatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterpreterPatternVC.swift; sourceTree = "<group>"; };
+		147D49C825F8C3470049B9BE /* StatePatternVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePatternVC.swift; sourceTree = "<group>"; };
+		147D49CD25F8C3550049B9BE /* StatePatternModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePatternModel.swift; sourceTree = "<group>"; };
 		1488822225959A09002614AC /* LZRXSwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXSwiftVC.swift; sourceTree = "<group>"; };
 		1488823E2595D17B002614AC /* LZRxSwiftBaseUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRxSwiftBaseUse.swift; sourceTree = "<group>"; };
 		148882432595D656002614AC /* LZRXSwiftTableRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LZRXSwiftTableRowView.swift; sourceTree = "<group>"; };
@@ -816,6 +824,8 @@
 		14E7EB0325E7A4BD007258C9 /* 状态模式 */ = {
 			isa = PBXGroup;
 			children = (
+				147D49C825F8C3470049B9BE /* StatePatternVC.swift */,
+				147D49CD25F8C3550049B9BE /* StatePatternModel.swift */,
 			);
 			path = "状态模式";
 			sourceTree = "<group>";
@@ -823,6 +833,8 @@
 		14E7EB0425E7A4C5007258C9 /* 解释器模式 */ = {
 			isa = PBXGroup;
 			children = (
+				147D49B425F8BF610049B9BE /* InterpreterPatternModel.swift */,
+				147D49B925F8BF720049B9BE /* InterpreterPatternVC.swift */,
 			);
 			path = "解释器模式";
 			sourceTree = "<group>";
@@ -1113,9 +1125,11 @@
 				14E5A08125945FB900EB4983 /* Int+Extension.swift in Sources */,
 				14E5A0F125946CA400EB4983 /* DNSPageView.swift in Sources */,
 				14E5A08525945FB900EB4983 /* JKGlobalDefinition.swift in Sources */,
+				147D49CE25F8C3550049B9BE /* StatePatternModel.swift in Sources */,
 				147D280B25F756040088D079 /* FlyweightPatternVC.swift in Sources */,
 				14E5A0FA25946DA900EB4983 /* XFSDHomeVM.swift in Sources */,
 				14E5A08325945FB900EB4983 /* UIWindow+Extension.swift in Sources */,
+				147D49BA25F8BF720049B9BE /* InterpreterPatternVC.swift in Sources */,
 				14E5A08225945FB900EB4983 /* UIView_Animation+Extension.swift in Sources */,
 				149950E925EF7658005B6C61 /* CommandPatternVC.swift in Sources */,
 				14CE2EE225EC927800C77641 /* ProxyPatternModel.swift in Sources */,
@@ -1192,6 +1206,7 @@
 				14E5A07E25945FB900EB4983 /* UIImageView+Extension.swift in Sources */,
 				14E5A0FF25946E3400EB4983 /* ViewModelType.swift in Sources */,
 				14D4D62825F3796900440DCA /* ObserverPatternModel.swift in Sources */,
+				147D49C925F8C3470049B9BE /* StatePatternVC.swift in Sources */,
 				14E5A0F225946CA400EB4983 /* DNSPageTitleView.swift in Sources */,
 				14E5A08925945FB900EB4983 /* UIImage+Extension.swift in Sources */,
 				14E5A10925946E9200EB4983 /* LZBaseM.swift in Sources */,
@@ -1215,6 +1230,7 @@
 				14E5A09125945FB900EB4983 /* Dictionary+Extension.swift in Sources */,
 				148882442595D656002614AC /* LZRXSwiftTableRowView.swift in Sources */,
 				14CE2ECB25EC7DDB00C77641 /* TemplateModel.swift in Sources */,
+				147D49B525F8BF610049B9BE /* InterpreterPatternModel.swift in Sources */,
 				14D4D62D25F3797A00440DCA /* ObserverPatternVC.swift in Sources */,
 				14E5A05625945F9000EB4983 /* HomeApi.swift in Sources */,
 				1408FA6F25F225B60084DBDB /* IteratorPatternModel.swift in Sources */,
